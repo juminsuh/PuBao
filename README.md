@@ -19,7 +19,7 @@ The system combines **real-time speech processing, an empathy-first LLM workflow
 
 ### 3. System Architecture
 
-![Image](./pipeline.png)
+![Image](./image.png)
 
 ### 4. Methodology
 
