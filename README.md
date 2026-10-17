@@ -19,11 +19,7 @@ The system combines **real-time speech processing, an empathy-first LLM workflow
 
 ### 3. System Architecture
 
-The system consists of a Next.js frontend, a FastAPI backend, and a LangGraph-based counseling pipeline.
 
-* **Voice interaction pipeline:** User Speech → Silero VAD → whisper.cpp STT → Gemini-Based Counseling Pipeline → GPT-SoVITS TTS → AudioWorklet Playback
-
-* **Counseling pipeline:** User Input → Empathetic Response Generation → Answer-Sufficiency Assessment → Conditional Dialogue Routing → Next Question or Follow-Up
 
 ### 4. Methodology
 
