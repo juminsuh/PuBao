@@ -51,7 +51,8 @@ The project presentation reports an **average response generation time of 1.44 s
 
 ### 6. Installation & Usage
 
-Prerequisites: Python 3.10+, Node.js 20+, Gemini API credentials, Required local speech models and services for voice functionality
+#### Prerequisites
+Python 3.10+, Node.js 20+, Gemini API credentials, Required local speech models and services for voice functionality
 
 #### Backend
 ```
