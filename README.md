@@ -25,21 +25,21 @@ The system combines **real-time speech processing, an empathy-first LLM workflow
 
 * **Voice Processing**
 
-Silero VAD detects speech boundaries, while pre-speech buffering and silence detection help preserve utterances and avoid unnecessary transcription requests.
-Completed speech segments are transcribed using whisper.cpp. The resulting text is passed to the counseling pipeline.
-For speech synthesis, GPT-SoVITS generates audio that is delivered through Raw PCM streaming and played continuously using AudioWorklet.
+  * Silero VAD detects speech boundaries, while pre-speech buffering and silence detection help preserve utterances and avoid unnecessary transcription requests.
+  * Completed speech segments are transcribed using whisper.cpp. The resulting text is passed to the counseling pipeline.
+  * For speech synthesis, GPT-SoVITS generates audio that is delivered through Raw PCM streaming and played continuously using AudioWorklet.
 
 * **Dual-Role LLM Architecture**
 
-The LangGraph-based counseling pipeline separates two responsibilities:
-* Response Generator: Produces an empathetic response with minimal reasoning overhead.
-* Dialogue Analyzer: Evaluates whether the user's response provides sufficient information for the current conversation stage.
-Conditional routing determines whether to proceed to the next stage or generate a follow-up question. This separation supports responsive interactions while maintaining structured dialogue progression.
+  * The LangGraph-based counseling pipeline separates two responsibilities:
+    * Response Generator: Produces an empathetic response with minimal reasoning overhead.
+    * Dialogue Analyzer: Evaluates whether the user's response provides sufficient information for the current conversation stage.
+  * Conditional routing determines whether to proceed to the next stage or generate a follow-up question. This separation supports responsive interactions while maintaining structured dialogue progression.
 
 * **Counseling Framework**
 
-PuBaO draws on Satir's Iceberg Model to explore emotional and cognitive dimensions such as feelings, perceptions, expectations, yearnings, and the self.
-The conversational flow includes rapport building, personal value exploration, guided conversation, and report generation.
+  * PuBaO draws on Satir's Iceberg Model to explore emotional and cognitive dimensions such as feelings, perceptions, expectations, yearnings, and the self.
+  * The conversational flow includes rapport building, personal value exploration, guided conversation, and report generation.
 
 ### 5. Experimental Results
 
